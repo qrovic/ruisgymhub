@@ -83,6 +83,34 @@ function submitEditStaffForm() {
     })
     return false;
 }
+function saveSetting(){
+    $("#dateTimeModal .close").click(),
+    $("#modeSwitchModal .close").click(),
+    $("#notificationSettingsModal .close").click(),
+    $("#privacySettingsModal .close").click(),
+    $("#accessibilitySettingsModal .close").click(),
+    $("#mouseCursorSettingsModal .close").click(),
+    $("#keyboardSettingsModal .close").click(),
+    $("#mailSettingsModal .close").click(),
+    $("#filterSettingsModal .close").click(),
+    $("#languageRegionSettingsModal .close").click(),
+    $("#resetSettingsModal .close").click()
+
+    Swal.fire({
+        title: "Changes In Setting Successful",
+        text: "Setting has been changed.",
+        icon: "success",
+        showCancelButton: false,
+        showCloseButton: false,
+        showConfirmButton: true,
+        confirmButtonText: "OK",
+        customClass: {
+            confirmButton: "custom-button-class"
+        },
+        buttonsStyling: false
+    })
+    return false;
+}
 const itemData = {
     name: "Bench Press",
     quantity: 6,
