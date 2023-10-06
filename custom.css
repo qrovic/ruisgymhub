@@ -571,12 +571,6 @@ input#date
     width: 100% !important;
 
 }
-.page-link {
-    color: #247a75;
-}
-.page-link:hover {
-    color: #247a75;
-}
 .members-show{
     flex: 1;
     width: 65%;
@@ -665,7 +659,7 @@ table {
     width:fit-content;
     height: 40px;
     border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(58, 72, 70, 0.1), 0 8px 16px #65977f1a;
     border: 1px solid #91c9c76b;
@@ -927,7 +921,7 @@ th {
     width: 130px;
     height: 40px;
     border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(58, 72, 70, 0.1), 0 8px 16px #65977f1a;
     border: 1px solid #91c9c76b;
@@ -1149,7 +1143,7 @@ td a{
     width:fit-content;
     height: 40px;
     border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(58, 72, 70, 0.1), 0 8px 16px #65977f1a;
     border: 1px solid #91c9c76b;
@@ -1439,7 +1433,7 @@ td{
         border-right: transparent;
     }
     .form-floating > label {
-        /*left:10%;*/
+        left:10%;
     }
     .name>.form-floating {
         width: 100%;
