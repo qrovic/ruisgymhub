@@ -1433,7 +1433,7 @@ td{
         border-right: transparent;
     }
     .form-floating > label {
-        left:10%;
+        /*left:10%;*/
     }
     .name>.form-floating {
         width: 100%;
