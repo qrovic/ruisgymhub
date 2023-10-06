@@ -571,6 +571,9 @@ input#date
     width: 100% !important;
 
 }
+.page-link {
+    color: #247a75;
+}
 .members-show{
     flex: 1;
     width: 65%;
