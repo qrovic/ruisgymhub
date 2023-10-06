@@ -77,25 +77,27 @@
                       </button>
                     </div>
                     <div class="modal-body">
+                        <form onsubmit="return saveSetting()">
                       <!-- Add date and time input fields here -->
                       <div class="form-group">
                         <label for="newDate">Select Date:</label>
-                        <input type="date" class="form-control" id="newDate">
+                        <input type="date" class="form-control" id="newDate" required>
                       </div>
                       <div class="form-group">
                         <label for="newTime">Select Time:</label>
-                        <input type="time" class="form-control" id="newTime">
+                        <input type="time" class="form-control" id="newTime" required>
                       </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" id="saveChanges" onclick="saveSetting()">Save Changes</button>
+                      <input type="submit" class="btn btn-primary"></button>
                     </div>
+                    </form>
                   </div>
                 </div>
               </div>
-            </div>
-              <div class="modal fade" id="modeSwitchModal">
+              
+            <div class="modal fade" id="modeSwitchModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <!-- Modal Header -->
@@ -107,8 +109,9 @@
                         <!-- Modal Body -->
                         <div class="modal-body">
                             <p>Choose the mode you prefer:</p>
+                            <form onsubmit="return saveSetting()">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="modeRadio" id="darkModeRadio">
+                                <input class="form-check-input" type="radio" name="modeRadio" id="darkModeRadio" required>
                                 <label class="form-check-label" for="darkModeRadio">Dark Mode</label>
                             </div>
                             <div class="form-check">
@@ -120,8 +123,9 @@
                         <!-- Modal Footer -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="applyModeButton" onclick="saveSetting()">Apply Mode</button>
+                            <input type="submit" class="btn btn-primary"></button>
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -137,16 +141,17 @@
                         <!-- Modal Body -->
                         <div class="modal-body">
                             <p>Choose which notifications you want to receive:</p>
+                            <form onsubmit="return saveSetting()">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="emailNotifications">
+                                <input class="form-check-input" type="checkbox" name="notif" id="emailNotifications" >
                                 <label class="form-check-label" for="emailNotifications">Email Notifications</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="smsNotifications">
+                                <input class="form-check-input" type="checkbox" name="notif" id="smsNotifications">
                                 <label class="form-check-label" for="smsNotifications">SMS Notifications</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="pushNotifications">
+                                <input class="form-check-input" type="checkbox" name="notif" id="pushNotifications">
                                 <label class="form-check-label" for="pushNotifications">Push Notifications</label>
                             </div>
                         </div>
@@ -154,8 +159,9 @@
                         <!-- Modal Footer -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="saveNotificationSettings" onclick="saveSetting()">Save Settings</button>
+                            <input type="submit" class="btn btn-primary"></button>
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -171,6 +177,7 @@
                         <!-- Modal Body -->
                         <div class="modal-body">
                             <p>Choose your preferred accessibility settings:</p>
+                            <form action="" onsubmit="saveSetting()">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="highContrast">
                                 <label class="form-check-label" for="highContrast">High Contrast Mode</label>
@@ -189,11 +196,12 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary" id="saveAccessibilitySettings" onclick="saveSetting()">Save Settings</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div> 
-            <div class="modal fade" id="privacySettingsModal">
+            <div class="modal fade" id="privacySettingsModal" tabindex="-1" role="dialog" aria-labelledby="addStaffModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <!-- Modal Header -->
@@ -354,37 +362,38 @@
             
                         <!-- Modal Body -->
                         <div class="modal-body">
-                            <form>
+                            <form onsubmit="return saveSetting()">
                                 <!-- Filter criteria input fields -->
                                 <div class="form-group">
                                     <label for="filterName">Filter Name:</label>
-                                    <input type="text" class="form-control" id="filterName">
+                                    <input type="text" class="form-control" id="filterName" required>
                                 </div>
             
                                 <div class="form-group">
                                     <label for="filterCategory">Filter Category:</label>
-                                    <select class="form-control" id="filterCategory">
+                                    <select class="form-control" id="filterCategory" required>
                                         <option value="category1">Active Member</option>
                                         <option value="category2">Inactive Member</option>
-                                        <option value="category3">Category 3</option>
+                                        <option value="category3">Staff</option>
                                         <!-- Add more categories as needed -->
                                     </select>
                                 </div>
             
                                 <div class="form-group">
                                     <label for="filterDate">Filter Date:</label>
-                                    <input type="date" class="form-control" id="filterDate">
+                                    <input type="date" class="form-control" id="filterDate" required>
                                 </div>
             
                                 <!-- Additional filter criteria can be added here -->
-                            </form>
+                            
                         </div>
             
                         <!-- Modal Footer -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="applyFilter" onclick="saveSetting()">Apply Filter</button>
+                            <input type="submit" class="btn btn-primary"></button>
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>
