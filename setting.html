@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#"><i class='bx bx-carousel' id="logo-pic"></i><span class="li-text" id="logo-name">Rui's Gym</span></a>
+        </div>
+        <div class="sidebar-li">
+        <ul class="sidebar-ul">
+            <li ><a href="index.html"><i class='bx bx-home'></i><span class="li-text">Home</span></a></li>
+            <li ><a href="membership.html"><i class='bx bx-check-square'></i></i><span class="li-text">Membership</span></a></li>
+            <li><a href="notification.html"><i class='bx bx-bell'></i><span class="li-text">Notification</span></a></li>
+            <li ><a href="payment.html"><i class='bx bx-wallet-alt'></i><span class="li-text">Payments</span></a></li>
+            <li><a href="inventory.html"><i class='bx bx-box' ></i><span class="li-text">Inventory</span></a></li>
+            <li><a href="staff.html"><i class='bx bx-group' ></i><span class="li-text">Staff</span></a></li>
+            <li><a href="report.html"><i class='bx bx-line-chart'></i><span class="li-text">Reports</span></a></li>
+            <li id="active"><a href="setting.html"><i class='bx bx-cog'></i><span class="li-text">Settings</span></a></li>
+            <li><a href="help.html"><i class='bx bx-receipt'></i><span class="li-text">Support/Help</span></a></li>
+        </ul>
+        </div>
+        <div class="logout"><a href="http://"><i class='bx bx-log-out-circle' ></i><span class="li-text">Logout</span></a></div>
+    </div>
+    
+    <div class="right">
+        <nav class="top-nav">
+            <div class="sidebar-button" id="ham-button"><a href="#"><i class='bx bx-list-ul toggle'></i></a></div>
+            <div class="navbar-profile"><a href="#"><i class='bx bx-user' ></i><span class="nav-profile-text">Rouel Quilantang</span></a></div>
+        </nav>
+        <main>
+            <div class="welcome">
+                <h1>Membership</h1>
+            </div>
+        </main>
+            <div class="content" id="content-setting">
+                <div class="settingtype">
+                    <h2>General</h2>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bxs-time' ></i></i>Date and Time</a></li>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bxs-moon' ></i>Mode</a></li>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bxs-bell' ></i></i>Notification</a></li>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bxs-lock-alt' ></i></i>Privacy and Security</a></li>
+                </div>
+                <div class="settingtype">
+                    <h2>Accessibility</h2>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bx-font-size' ></i>Font</a></li>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bxs-mouse-alt'></i>Mouse and Cursor</a></li>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bxs-keyboard' ></i>Keyboard Shortcut</a></li>
+                 
+                </div>
+                <div class="settingtype">
+                    <h2>General</h2>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bxs-envelope' ></i>Mail Setting</a></li>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bxs-filter-alt' ></i>Filter</a></li>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bx-globe' ></i>Language and Region</a></li>
+                    <li class="setting-li"><a href="#" data-toggle="modal" data-target="#dateTimeModal"><i class='bx bx-reset' ></i>Reset</a></li>
+                </div>
+                
+                
+
+            </div>
+    <script src="./sidebar.js"></script>
+    <script src="./confirmation.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+    
+ 
+</body>
+</html>
