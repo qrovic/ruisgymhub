@@ -388,8 +388,14 @@ a:hover{
 
 /* MEMBERSHIP*/
 .page-item.active .page-link {
-    color: #247a75 !important;
-    border-color: #247a75 !important;
+    background-color: #247a75 !important;
+    border-color: #247a75;
+}
+.page-link {
+    color: #247a75;
+}
+.page-link:hover{
+    color:#247a75
 }
 #content-membership{
     
