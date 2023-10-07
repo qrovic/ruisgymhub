@@ -645,9 +645,12 @@ table {
 .checktype{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     
+}
+.checktype label{
+    padding-right:10px;
 }
 .memtype{
     display: flex;
