@@ -1317,6 +1317,7 @@ td{
         flex-direction:column;
         width: auto;
         margin-bottom: 20px;
+        overflow-y: unset !important;
     }
     .income-top, .income-bot{
         flex-direction: column;
