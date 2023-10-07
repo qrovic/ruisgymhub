@@ -198,7 +198,9 @@ a:hover{
     height: 50px;
     background-color: white;
 }
-
+.logout:hover{
+    color:#247a75;
+}
 .navbar-profile i{
     padding: 0px 5px;
     margin: 0px;
