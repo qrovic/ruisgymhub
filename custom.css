@@ -1625,7 +1625,7 @@ td{
         border-bottom: 1px solid  #247a7543;  
     }
     .content{
-        max-height: calc(100lvh - 50px - 60px - 25px);
+        max-height: calc(100lvh - 50px - 60px - 28px);
         
         justify-content: center;
         flex-direction: row;
