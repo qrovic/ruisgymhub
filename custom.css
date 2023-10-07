@@ -1792,7 +1792,7 @@ td{
     }
     
     #content-setting{
-        max-height: calc(100lvh - 50px - 60px - 25px - 50px) !important;
+        calc(100lvh - 50px - 60px - 25px - 30px) !important
     }
     .name{
         align-items: center;
