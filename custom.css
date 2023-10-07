@@ -1581,6 +1581,9 @@ td{
         flex: 1;
    
     }
+    #content-staff{
+        max-height:calc(100lvh - 50px - 60px - 25px - 80px) !important;
+    }
     .logo{
         font-size:x-large;
     }
