@@ -647,7 +647,7 @@ table {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    
+    color: #247a75;
 }
 .checktype label{
     padding-right:10px;
