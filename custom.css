@@ -1790,8 +1790,10 @@ td{
         height: calc(3.5rem + 2px);
         
     }
-    #content-membership{
-        max-height: calc(100lvh - 50px - 60px - 25px - 53px) !important;
+    
+    #content-setting{
+        max-height: calc(100lvh - 50px - 60px - 25px - 50px) !important;
+    }
     .name{
         align-items: center;
     }
