@@ -330,6 +330,7 @@ a:hover{
     border-radius: 10px;
     border-collapse:collapse;
     box-shadow: 0 2px 4px rgba(58, 72, 70, 0.1), 0 8px 16px #65977f1a;
+    overflow-y:auto;
 }
 .income-top{
     display: flex;
