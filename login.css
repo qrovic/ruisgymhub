@@ -231,6 +231,7 @@ a:hover{
 }
 .welcome p,h1{
     margin: 0px;
+    margin-bottom: 10px;
 }
 
 
