@@ -1745,7 +1745,7 @@ td{
     #content-report{
         padding-left: 10px;
         padding-right: 10px;
-        max-height: calc(100lvh - 50px - 60px);
+        max-height: calc(100lvh - 50px - 103px);
         padding-top: 10px;
     }
     #content-inventory{
