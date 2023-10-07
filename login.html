@@ -1,23 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="login.css">
-   
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
-    <div class="login">
-        
-    </div>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="buttonlogin" onclick="index.html">Submit</button>
+      </form>
+    
+    <script src="./sidebar.js"></script>
+    <script src="./confirmation.js"></script>
+    <script src="./bootstrap.min.js"></script>
 
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+       
+    var dateInput = document.getElementById('datelog1');
+
+    var currentDate = new Date();
+
+    var formattedDate = currentDate.toISOString().slice(0, 10);
+
+    
+    dateInput.value = formattedDate;
+
+    var dateInput = document.getElementById('datelog2');
+
+    
+    var currentDate = new Date();
+
+    
+    var formattedDate = currentDate.toISOString().slice(0, 10);
+
+  
+    dateInput.value = formattedDate;
+    var dateInput = document.getElementById('datelog3');
+
+
+    var currentDate = new Date();
+
+    
+    var formattedDate = currentDate.toISOString().slice(0, 10);
+
+ 
+    dateInput.value = formattedDate;
+
+</script>
+<script>
+    
+    var timeInput = document.getElementById('timelog1');
+
+    
+    var currentTime = new Date();
+
+    
+    var formattedTime =
+    currentTime.getHours().toString().padStart(2, '0') +
+    ':' +
+    currentTime.getMinutes().toString().padStart(2, '0');
+
+    
+    timeInput.value = formattedTime;
+
+    var timeInput = document.getElementById('timelog2');
+
+
+    var currentTime = new Date();
+
+  
+    var formattedTime =
+    currentTime.getHours().toString().padStart(2, '0') +
+    ':' +
+    currentTime.getMinutes().toString().padStart(2, '0');
+
+   
+    timeInput.value = formattedTime;
+
+</script>
+ 
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+        $('.selectpicker').selectpicker();
+    });
+</script>
+
+<script>
+
+    var radioButtons = document.querySelectorAll('.my-radio');
+    var forms = document.querySelectorAll('.my-form');
+
+
+    radioButtons.forEach(function (radioButton) {
+        radioButton.addEventListener('change', function () {
+    
+            var targetId = this.getAttribute('data-target');
+
+
+            forms.forEach(function (form) {
+                if (form.id === targetId) {
+                    form.style.display = 'block';
+                } else {
+                    form.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+<script>
+   
+        var radioCash = document.getElementById('myCheckboxCash');
+        var radioGcash = document.getElementById('myCheckboxGcash');
+
+        // Add event listeners to radio buttons
+        radioCash.addEventListener('change', function () {
+            document.getElementById('cashpayment').style.display = 'flex';
+            document.getElementById('gcashpayment').style.display = 'none';
+        });
+
+        radioGcash.addEventListener('change', function () {
+            document.getElementById('cashpayment').style.display = 'none';
+            document.getElementById('gcashpayment').style.display = 'flex';
+        });
+</script>
+<script>
+ 
+        var radioCash1 = document.getElementById('myCheckboxCash1');
+        var radioGcash1 = document.getElementById('myCheckboxGcash1');
+
+        // Add event listeners to radio buttons
+        radioCash1.addEventListener('change', function () {
+            document.getElementById('cashpayment1').style.display = 'flex';
+            document.getElementById('gcashpayment1').style.display = 'none';
+        });
+
+        radioGcash1.addEventListener('change', function () {
+            document.getElementById('cashpayment1').style.display = 'none';
+            document.getElementById('gcashpayment1').style.display = 'flex';
+        });
+</script>
+<script>
+    
+        var radioCash2 = document.getElementById('myCheckboxCash2');
+        var radioGcash2 = document.getElementById('myCheckboxGcash2');
+
+  
+        radioCash2.addEventListener('change', function () {
+            document.getElementById('cashpayment2').style.display = 'flex';
+            document.getElementById('gcashpayment2').style.display = 'none';
+        });
+
+        radioGcash2.addEventListener('change', function () {
+            document.getElementById('cashpayment2').style.display = 'none';
+            document.getElementById('gcashpayment2').style.display = 'flex';
+        });
+</script>
 </body>
 </html>
