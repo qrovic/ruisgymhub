@@ -1626,7 +1626,7 @@ td{
         
     } 
     #content-payment{
-        max-height: calc(100lvh - 50px - 60px - 25px - 30px);
+        max-height: calc(100lvh - 50px - 60px - 25px - 28px)
     }
     .stats-div{
         max-height: calc(100lvh - 50px - 60px - 25px - 15px);
