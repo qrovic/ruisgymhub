@@ -1595,7 +1595,7 @@ td{
         padding: 10px 20px;
     }
     #content-setting{
-        flex-direction: column;
+        flex-direction: column !important;
         max-height: calc(100lvh - 50px - 60px - 40px) !important;
     }
     .total-income{
