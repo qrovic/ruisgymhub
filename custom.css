@@ -1825,6 +1825,6 @@ td{
         opacity: 0;
     }
     #content-report{
-        max-height: calc(100lvh);
+        calc(100lvh - 50px - 60px - 25px - 13px)
     }
 }
