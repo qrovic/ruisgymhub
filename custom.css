@@ -1785,7 +1785,7 @@ td{
         
     }
     #content-membership{
-        max-height: calc(100lvh - 50px - 60px - 25px - 38px) !important;
+        max-height: calc(100lvh - 50px - 60px - 25px - 50px) !important;
     .name{
         align-items: center;
     }
