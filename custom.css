@@ -226,7 +226,7 @@ a:hover{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-height: calc(100lvh - 50px - 60px - 25px - 58px);
+    max-height: calc(100lvh - 50px - 60px - 25px - 28px);
     
 }
 .welcome p,h1{
