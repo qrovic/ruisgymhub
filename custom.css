@@ -1596,7 +1596,7 @@ td{
     }
     #content-setting{
         flex-direction: column !important;
-        max-height: calc(100lvh - 50px - 60px - 45px) !important;
+        max-height: calc(100lvh - 50px - 60px - 53px) !important;
     }
     .total-income{
         flex-direction:column;
