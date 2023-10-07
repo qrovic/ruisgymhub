@@ -1235,6 +1235,7 @@ td{
     height: 100%;
     border-radius: 10px;
     color: #247a75;
+    
 }
 .setting-li{
     padding: 0;
@@ -1569,6 +1570,7 @@ td{
     }
     #content-setting{
         height: auto;
+        max-height: calc(100lvh - 50px - 60px - 25px - 10px);
     }
 }
 @media screen and (min-width: 768px) and (max-width:1023px){
